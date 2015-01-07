@@ -1,6 +1,6 @@
 {
   "name": "browserify-rift-template",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A browserify transform for rift-template files",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Riim/browserify-rift-template",
   "dependencies": {
-    "rift-template": "^2.11.0",
+    "rift-template": "^2.11.1",
     "through": "^2.3.4"
   },
   "peerDependencies": {

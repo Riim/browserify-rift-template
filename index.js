@@ -17,11 +17,8 @@ module.exports = function(file) {
 
 	function end() {
 		this.queue(
-			[
-				'module.exports = require(\'rift-template\/runtime\').wrap(function(_escape, _include, _helpers, _each) {',
-					riftTemplate.toJS(input),
-				'});'
-			].join(' ')
+			'module.exports = require(\'rift-template-runtime\').wrap(function(_escape, _include, _helpers, _each) { ' +
+				riftTemplate.toJS(input) + ' });'
 		);
 
 		this.queue(null);
