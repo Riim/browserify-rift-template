@@ -5,7 +5,7 @@ var through = require('through');
 var riftTemplate = require('rift-template');
 
 module.exports = function(file) {
-	if (path.extname(file) != '.rft') {
+	if (path.extname(file) != '.rtt') {
 		return through();
 	}
 
