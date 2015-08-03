@@ -1,4 +1,3 @@
-
 var path = require('path');
 
 var through = require('through');
@@ -17,7 +16,7 @@ module.exports = function(file) {
 
 	function end() {
 		this.queue(
-			'module.exports = require(\'rift-template-runtime\').wrap(function(_escape, _include, _helpers, _each) { ' +
+			'module.exports = require(\'rift-template-runtime\').wrap(function(escape, include, helpers, each) { ' +
 				riftTemplate.toFnBodyExpression(input) + ' });'
 		);
 
